@@ -17,6 +17,7 @@ function SearchBar({ filterText, inStockOnly }) {
         type="text"
         value={filterText}
         placeholder="Search..."
+        onChange={(e) => onFilterTextChange(e.target.value)}
       />
     </form>
   );
